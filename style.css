@@ -1,0 +1,10 @@
+:root {
+    --nav-blue: rgb(25 146 212);
+    --art-yellow: rgb(240, 180, 40);
+    font-family: Roboto;
+}
+
+.navigator {
+    background-color: var(--nav-blue);
+    color: white;
+}
