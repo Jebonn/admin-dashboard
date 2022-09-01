@@ -4,7 +4,28 @@
     font-family: Roboto;
 }
 
-.navigator {
+body {
+    display: grid;
+    grid-template-columns: 1fr  6fr min-content;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard {
     background-color: var(--nav-blue);
     color: white;
+}
+
+.dashboard > div {
+    font-weight: bold;
+    margin: 1em;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.icon {
+    height: 2em;
+    width: 2em;
 }
