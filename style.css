@@ -6,19 +6,39 @@
 
 body {
     display: grid;
-    grid-template-columns: 1fr  6fr min-content;
+    grid-template-columns: 1fr  6fr;
     height: 100vh;
     margin: 0;
 }
 
-.dashboard {
-    background-color: var(--nav-blue);
-    color: white;
+li {
+    margin-left: 1em;
+    margin-bottom: .25em;
 }
 
-.dashboard > div {
+ul, .dashboard-link {
+    list-style-type: none;
+    padding: 0;
+    margin: 2em 1em;
+}
+
+.dashboard-h2-text {
+    margin: 0;
+}
+
+.dashboard-nav {
+    background-color: var(--nav-blue);
+    min-width: 250px;
+}
+
+.dashboard-nav a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 4px 0;
     font-weight: bold;
-    margin: 1em;
 }
 
 .container {
@@ -28,4 +48,9 @@ body {
 .icon {
     height: 2em;
     width: 2em;
+}
+
+.icon-dashboard {
+    height: 3em;
+    width: 3em;
 }
