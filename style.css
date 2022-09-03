@@ -1,7 +1,9 @@
 :root {
     --nav-blue: rgb(25 146 212);
     --art-yellow: rgb(240, 180, 40);
+    --bg-lightgrey: rgb(230,230,230);
     font-family: Roboto;
+    font-weight: bold;
 }
 
 body {
@@ -12,14 +14,13 @@ body {
 }
 
 li {
-    margin-left: 1em;
-    margin-bottom: .25em;
+    margin: 0 1em .25em 1em;
 }
 
 ul, .dashboard-link {
     list-style-type: none;
     padding: 0;
-    margin: 2em 1em;
+    margin: 2em 0;
 }
 
 .dashboard-h2-text {
@@ -37,12 +38,45 @@ ul, .dashboard-link {
     display: flex;
     align-items: center;
     gap: 1em;
-    padding: 4px 0;
-    font-weight: bold;
+    padding: 4px 1em;
 }
 
-.container {
-    background-color: lightgray;
+.header-user {
+    background-color: white;
+    box-shadow: 0 0 8px grey;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top-half, .header-bottom-half {
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.profile-picture {
+    height: 2em;
+    width: 2em;
+    border-radius: 1em;
+}
+
+.large.profile-picture {
+    height: 4em;
+    width: 4em;
+    border-radius: 2em;
+}
+
+.search-field {
+    background-color: var(--bg-lightgrey);
+    border: 2px solid lightgrey;
+    border-radius: 8px;
+}
+
+.section-main {
+    background-color: var(--bg-lightgrey);
+    display: grid;
+    grid-template-rows: 2fr 6fr;
 }
 
 .icon {
