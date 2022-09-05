@@ -24,6 +24,10 @@ button {
     border-radius: 1.25em;
 }
 
+h4 {
+    margin: 0;
+}
+
 li {
     margin: 0 1em .25em 1em;
 }
@@ -91,14 +95,35 @@ ul{
     height: 2em;
 }
 
-.section-main {
+.user-greeting span {
+    font-size: .85em;
+}
+
+.div-main-container {
     background-color: var(--bg-lightblue);
     display: grid;
     grid-template-rows: 1fr 4fr;
 }
 
-.section-content {
+.div-content-container {
     padding: 1em;
+    display: grid;
+    grid-template: 1fr 1fr / 4fr 1.5fr;
+
+}
+
+.project-description {
+    color: grey;
+    font-weight: 100;
+    font-size: .85em;
+    margin: 0;
+}
+
+.section-projects {
+    display: grid;
+    grid-template: fit-content(0) 1fr 1fr 1fr / 1fr 1fr;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
 }
 
 .icon {
@@ -115,6 +140,6 @@ ul{
     margin-left: 4em;
 }
 
-.user-greeting span {
-    font-size: .85em;
+.your-projects-text {
+    grid-column: 1 / -1;
 }
