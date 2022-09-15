@@ -7,7 +7,7 @@
     font-weight: bold;
 }
 
-article, .announcement-container {
+article, .announcement-container, .trending-container {
     background-color: white;
     border-radius: .5em;
     padding: 1em;
@@ -24,6 +24,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding: 1.5em;
 }
 
 article > div {
@@ -48,6 +49,12 @@ button {
     border: none;
     border-radius: 1.25em;
 }
+
+hr.solid {
+    border: none;
+    border-top: 1px solid lightgray;
+    min-width: 90%;
+  }
 
 li {
     margin: 0 1em .25em 1em;
